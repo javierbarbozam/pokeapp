@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: rgba(253,238,214,255);
+  color: rgb(36, 36, 36);
+}
+
+option {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  text-align: center;
+  line-height: 25px;
+}
+
+#pokemonSelect {
+  display: block;
+  margin: 50px auto 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  height: 50px;
+  padding: 0 10px;
+  background-color: rgb(221, 51, 51);
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+#pokemonSelect:hover {
+  cursor: pointer;
+}
+
+#pokemon-detail {
+  margin: 20px auto 0;
+  height: 80vh;
+  width: 80vw;
+  position: relative;
+  background-color: rgba(253,246,235,255);
+  border: solid 6px rgb(36, 36, 36);
+  border-radius: 10px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pokemon-slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.05;
+  font-size: 100px;
+  line-height: 120px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.pokemon-name {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.pokemon-img {
+  width: 500px;
+  aspect-ratio: 1/1;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-size: 1rem;
+  background-color: rgba(254, 215, 131, 0.517);
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.subtitle + p {
+  text-align: center;
+}
+
+.pokemon-abilities {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.pokemon-abilities li {
+  margin: 20px 0;
+}
+
+.pokemon-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.pokemon-stats li {
+  padding-bottom: 15px;
+  border-bottom: solid 3px rgba(36, 36, 36, 0.11);
+  /* border-radius: 15px; */
+}
+
+/* .stats-info {
+  margin: 20px 0;
+} */
+
+.stats-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
